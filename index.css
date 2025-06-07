@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body{
+  font-family:"Noto Sans"
+}
 *,*::before,*::after {
   box-sizing: border-box;
 }
@@ -60,7 +64,7 @@ img {
           margin: 0 auto;
 }
 
-  .nev{
+  .nav{
        display: flex;
        justify-content: center;
 }
@@ -86,7 +90,6 @@ img {
 }
     .box1{
           width: 50%;
-          line-height:1.5;
           background-image:
             url("https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true");
           border-bottom: 1px solid #6C757D;
@@ -102,12 +105,12 @@ img {
            color:#0027D5;
 }
     .job{
-        max-width:314px;
+          max-width:314px;
            font-size:28px;
-           font-weight: 700;
+           font-weight:700;
            color:#0027D5;
 }
- @media(max-width:767px){
+ @media(max-width:870px){
 .section{
 flex-direction:column;
 align-items: center;
@@ -116,11 +119,10 @@ align-items: center;
 width: 100%;}
 .box1{
 width: 100%;
-margin: 0 auto;
-padding: 24px;
+padding-left: 24px;
 }
 .title{
-font-size: 52px;
+font-size:52px;
 padding-top: 24px;
 }
 .job{
@@ -130,7 +132,6 @@ padding-bottom: 24px;
 }
 
 .previous{
-  max-width:1920px;
   display: flex;
 }
 .p1{
@@ -168,19 +169,19 @@ padding-bottom: 24px;
   font-weight: 700;
 }
 .simple1{
-  max-width:960px;
   line-height:150%;
   padding-bottom: 16px;
 }
 .more1{
   width: 96px;
-  text-decoration:none;
+  display: inline-block;
+  margin-top:16px;
+  text-decoration: none;
   color:#4b4b4b;
-  border:1px solid #000;
-  text-align:center;
-  padding: 16px 12px;
+  border:1px solid #4b4b4b;
+  padding:8px 12px;
+  text-align: center;
   border-radius:40px;
-  margin-bottom: 48px;
 }
 .more1:hover{
   background: #0074d2;
@@ -210,7 +211,7 @@ padding-bottom: 24px;
     flex-wrap:wrap;
 }  
  .search{
-  max-width:1296px;
+  
   display: flex;
   justify-content:start;
   }
@@ -262,13 +263,12 @@ padding-bottom: 24px;
   margin-top: 20px;
 }
 .more2{
-  display: block;
+  display: inline-block;
   margin-top:16px;
-  width: 96px;
   text-decoration: none;
   color:#4b4b4b;
   border:1px solid #4b4b4b;
-  padding:8px 0px;
+  padding:8px 16px;
   text-align: center;
   border-radius:40px;
 }
@@ -324,7 +324,7 @@ padding-bottom: 24px;
   .search{
     width: 100%;
     display: flex;
-    padding-left: 12px;
+    justify-content: center;
   }
   .enter{
     width: 351px;
